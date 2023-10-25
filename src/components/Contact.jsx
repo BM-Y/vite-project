@@ -2,8 +2,8 @@
 
 
 
-export function Contact(){
+export function Contact({contact}){
 
-return <p>youssef</p>
+return <p>{contact.lastname}</p>
 
 }

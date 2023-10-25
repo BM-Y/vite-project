@@ -28,7 +28,7 @@ return (
     <h1>Salut Millau </h1>
     <button onClick={getContact}>recup liste </button>
     {listContacts.map((contact, index)=>
-    /*<div key={index}>
+    /*<div key={index}> une faço
 
     <h2>{contact.firstname}</h2>
     <h2>{contact.lastname}</h2>
