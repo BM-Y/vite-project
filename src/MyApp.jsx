@@ -33,7 +33,8 @@ return (
     <h2>{contact.firstname}</h2>
     <h2>{contact.lastname}</h2>
     </div>*/
-    <Contact  key={index} contact={contact}/>
+    <Contact  key={index} 
+                contact={contact}/>
 
     )}
     
