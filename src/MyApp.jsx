@@ -5,12 +5,6 @@ import {useEffect,useState }from "react"
 
 //const listContacts=[] version Js . 
 
-
-
-
-
-
-
 function MyApp(){
 
     const [listContacts, setlistContacts]= useState([])
@@ -33,7 +27,7 @@ return (
     <h1>Salut Millau </h1>
     <button onClick={getContact}>recup liste </button>
     {listContacts.map((contact, index)=>
-    <h2 key={index}>{contact.birthday}</h2>
+    <h2 key={index}>{contact.firstname}</h2>
     )}
     
 </>
