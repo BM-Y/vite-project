@@ -1,6 +1,7 @@
 
 
-import {useEffect,useState }from "react"
+import {useState }from 'react'
+import{Contact} from './components/Contact.jsx'
 
 
 //const listContacts=[] version Js . 
@@ -27,7 +28,13 @@ return (
     <h1>Salut Millau </h1>
     <button onClick={getContact}>recup liste </button>
     {listContacts.map((contact, index)=>
-    <h2 key={index}>{contact.firstname}</h2>
+    /*<div key={index}>
+
+    <h2>{contact.firstname}</h2>
+    <h2>{contact.lastname}</h2>
+    </div>*/
+    <Contact  key={index} contact={contact}/>
+
     )}
     
 </>

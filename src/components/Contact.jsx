@@ -1,9 +1,9 @@
-import{MyApp} from"MyApp"
+
 
 
 
 export function Contact(){
 
-
+return <p>youssef</p>
 
 }
