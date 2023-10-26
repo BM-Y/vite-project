@@ -1,14 +1,17 @@
-import {useState }from 'react'
+import {useState}from 'react'
 
 
 
-const [listGroups, setlistGroups]= useState([])
+export function Groupe({group}){
 
-fetch('http://localhost:8000/api/group')
+ const [listGroups, setlistGroups]= useState()
 
-        .then((res)=>res.json())
-        .then((data)=>setlistGroups(data['hydra:member']))
+       fetch('http://localhost:8000'+{group})
 
-        return 
+                .then((res)=>res.json())
+                .then((data)=>setlistGroups(data.name))
 
-        {listGroups}
+
+        return  <span>{listGroups}</span>
+
+}     
